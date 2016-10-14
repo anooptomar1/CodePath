@@ -11,7 +11,6 @@
 		EA9EB0531DB0AEC900D1CEA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9EB0521DB0AEC900D1CEA9 /* ViewController.swift */; };
 		EA9EB0561DB0AEC900D1CEA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA9EB0541DB0AEC900D1CEA9 /* Main.storyboard */; };
 		EA9EB0591DB0AEC900D1CEA9 /* W1_HW_Dropbox.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA9EB0571DB0AEC900D1CEA9 /* W1_HW_Dropbox.xcdatamodeld */; };
-		EA9EB05B1DB0AEC900D1CEA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA9EB05A1DB0AEC900D1CEA9 /* Assets.xcassets */; };
 		EA9EB05E1DB0AEC900D1CEA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA9EB05C1DB0AEC900D1CEA9 /* LaunchScreen.storyboard */; };
 		EA9EB0691DB0AEC900D1CEA9 /* W1_HW_DropboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9EB0681DB0AEC900D1CEA9 /* W1_HW_DropboxTests.swift */; };
 		EA9EB0741DB0AEC900D1CEA9 /* W1_HW_DropboxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9EB0731DB0AEC900D1CEA9 /* W1_HW_DropboxUITests.swift */; };
@@ -40,7 +39,6 @@
 		EA9EB0521DB0AEC900D1CEA9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EA9EB0551DB0AEC900D1CEA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA9EB0581DB0AEC900D1CEA9 /* W1_HW_Dropbox.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = W1_HW_Dropbox.xcdatamodel; sourceTree = "<group>"; };
-		EA9EB05A1DB0AEC900D1CEA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA9EB05D1DB0AEC900D1CEA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA9EB05F1DB0AEC900D1CEA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA9EB0641DB0AEC900D1CEA9 /* W1_HW_DropboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = W1_HW_DropboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,7 +100,6 @@
 				EA9EB0501DB0AEC900D1CEA9 /* AppDelegate.swift */,
 				EA9EB0521DB0AEC900D1CEA9 /* ViewController.swift */,
 				EA9EB0541DB0AEC900D1CEA9 /* Main.storyboard */,
-				EA9EB05A1DB0AEC900D1CEA9 /* Assets.xcassets */,
 				EA9EB05C1DB0AEC900D1CEA9 /* LaunchScreen.storyboard */,
 				EA9EB05F1DB0AEC900D1CEA9 /* Info.plist */,
 				EA9EB0571DB0AEC900D1CEA9 /* W1_HW_Dropbox.xcdatamodeld */,
@@ -236,7 +233,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA9EB05E1DB0AEC900D1CEA9 /* LaunchScreen.storyboard in Resources */,
-				EA9EB05B1DB0AEC900D1CEA9 /* Assets.xcassets in Resources */,
 				EA9EB0561DB0AEC900D1CEA9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +410,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = W1_HW_Dropbox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xdlin.W1-HW-Dropbox";
@@ -426,6 +423,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = W1_HW_Dropbox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xdlin.W1-HW-Dropbox";
