@@ -894,6 +894,13 @@
                                 <frame key="frameInset" minY="64" width="375" height="554"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odU-hl-twO">
+                                <frame key="frameInset" minY="308" width="375" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="zCc-S7-BhE" kind="push" id="0Uv-7d-RHO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -901,7 +908,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2EJ-zg-sxi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8904.7999999999993" y="965.6671664167917"/>
+            <point key="canvasLocation" x="8847" y="966"/>
         </scene>
         <!--Existing photos View Controller-->
         <scene sceneID="Wup-qL-tfb">
@@ -1007,6 +1014,40 @@
             </objects>
             <point key="canvasLocation" x="8904.7999999999993" y="2998.6506746626687"/>
         </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="Thj-DV-nkL">
+            <objects>
+                <viewController id="zCc-S7-BhE" customClass="DetailViewController" customModule="W1_HW_Dropbox2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mso-rs-E59"/>
+                        <viewControllerLayoutGuide type="bottom" id="dXd-Dx-dPA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vmv-tk-Kmj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" image="favorited" translatesAutoresizingMaskIntoConstraints="NO" id="vOb-aD-VJ3">
+                                <frame key="frameInset" minY="64" width="374" height="488"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HrT-n0-d9Y">
+                                <frame key="frameInset" minX="323" minY="75" width="51" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="favorite_btn"/>
+                                <state key="selected" image="favorited_btn"/>
+                                <connections>
+                                    <action selector="buttonDidPress:" destination="zCc-S7-BhE" eventType="touchUpInside" id="I4K-57-CXR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="he0-or-PLE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cie-SM-KMZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9528.7999999999993" y="965.6671664167917"/>
+        </scene>
     </scenes>
     <resources>
         <image name="create1" width="320" height="568"/>
@@ -1020,6 +1061,9 @@
         <image name="empty_photos" width="320" height="454"/>
         <image name="existing_files" width="320" height="454"/>
         <image name="existing_photos" width="320" height="725"/>
+        <image name="favorite_btn" width="26" height="25"/>
+        <image name="favorited" width="320" height="417"/>
+        <image name="favorited_btn" width="26" height="25"/>
         <image name="favorites_tab" width="30" height="30"/>
         <image name="files_tab" width="30" height="30"/>
         <image name="logged_out" width="320" height="568"/>
