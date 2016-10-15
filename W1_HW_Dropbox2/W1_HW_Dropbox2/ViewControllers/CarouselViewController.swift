@@ -8,16 +8,27 @@
 
 import UIKit
 
-class CarouselViewController: UIViewController {
+class CarouselViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var carouselImage: UIImageView!
     @IBOutlet weak var carouselScroll: UIScrollView!
+    
+    @IBOutlet weak var pageControl: UIPageControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         carouselScroll.contentSize = CGSize(width:1095, height: 667)//carouselImage.frame.size
-        // Do any additional setup after loading the view.
+        carouselScroll.delegate = self
+        
     }
 
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        // Get the current page based on the scroll offset
+        let page : Int = Int(round(scrollView.contentOffset.x / 320))
+    
+        // Set the current page, so the dots will update
+        pageControl.currentPage = page
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

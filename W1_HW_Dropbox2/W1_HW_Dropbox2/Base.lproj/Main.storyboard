@@ -53,12 +53,40 @@
                                         <rect key="frame" x="730" y="0.0" width="365" height="667"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="daj-US-pz8">
+                                        <rect key="frame" x="765" y="448" width="310" height="58"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <segue destination="lmZ-JZ-U9f" kind="modal" id="e3C-5w-eVF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pFL-mh-PNv">
+                                        <rect key="frame" x="766" y="522" width="310" height="58"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <segue destination="6Sa-Ph-Q5d" kind="modal" id="7bU-Lg-WhZ"/>
+                                        </connections>
+                                    </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="welcome2" id="7ST-6f-6xG">
                                         <rect key="frame" x="365" y="0.0" width="365" height="667"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="h1e-lx-xP9">
+                                        <rect key="frame" x="146" y="595" width="827" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.95657426118850708" green="0.97986072301864624" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" red="0.17254901959999999" green="0.38823529410000002" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                             </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="1v6-Sb-uRh">
+                                <frame key="frameInset" minX="163" minY="595" width="39" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="pageIndicatorTintColor" red="0.71632075309753418" green="0.85938555002212524" blue="0.97224360704421997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.17254901959999999" green="0.38823529410000002" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -67,6 +95,7 @@
                     <connections>
                         <outlet property="carouselImage" destination="YDi-FL-Q0d" id="UhK-lj-UVz"/>
                         <outlet property="carouselScroll" destination="XPW-XN-pf1" id="K4F-oH-eo5"/>
+                        <outlet property="pageControl" destination="1v6-Sb-uRh" id="Lae-6X-PLR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vbg-iO-yL5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1026,6 +1055,8 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="BIJ-JB-XCR"/>
+        <segue reference="e3C-5w-eVF"/>
+        <segue reference="7bU-Lg-WhZ"/>
         <segue reference="ml0-Gm-9Jg"/>
         <segue reference="kcc-h0-YCG"/>
     </inferredMetricsTieBreakers>
