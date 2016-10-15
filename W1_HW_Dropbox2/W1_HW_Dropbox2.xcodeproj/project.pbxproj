@@ -12,6 +12,7 @@
 		EA2D87151DB0C04500BD1D80 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2D87141DB0C04500BD1D80 /* CreateAccountViewController.swift */; };
 		EA2D87171DB0C05500BD1D80 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2D87161DB0C05500BD1D80 /* SignInViewController.swift */; };
 		EA2D87191DB1B3CB00BD1D80 /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2D87181DB1B3CB00BD1D80 /* TermsViewController.swift */; };
+		EA2D871B1DB1BA3C00BD1D80 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2D871A1DB1BA3C00BD1D80 /* SettingsViewController.swift */; };
 		EA9EB0921DB0B93300D1CEA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9EB0911DB0B93300D1CEA9 /* AppDelegate.swift */; };
 		EA9EB0941DB0B93300D1CEA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9EB0931DB0B93300D1CEA9 /* ViewController.swift */; };
 		EA9EB0971DB0B93300D1CEA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA9EB0951DB0B93300D1CEA9 /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 		EA2D87141DB0C04500BD1D80 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateAccountViewController.swift; path = ViewControllers/CreateAccountViewController.swift; sourceTree = "<group>"; };
 		EA2D87161DB0C05500BD1D80 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = ViewControllers/SignInViewController.swift; sourceTree = "<group>"; };
 		EA2D87181DB1B3CB00BD1D80 /* TermsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TermsViewController.swift; path = ViewControllers/TermsViewController.swift; sourceTree = "<group>"; };
+		EA2D871A1DB1BA3C00BD1D80 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = ViewControllers/SettingsViewController.swift; sourceTree = "<group>"; };
 		EA9EB08E1DB0B93300D1CEA9 /* W1_HW_Dropbox2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = W1_HW_Dropbox2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA9EB0911DB0B93300D1CEA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA9EB0931DB0B93300D1CEA9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				EA2D87101DB0BF6100BD1D80 /* SignInRootViewController.swift */,
 				EA2D87141DB0C04500BD1D80 /* CreateAccountViewController.swift */,
 				EA2D87121DB0BFB500BD1D80 /* CreateAccountRootViewController.swift */,
+				EA2D871A1DB1BA3C00BD1D80 /* SettingsViewController.swift */,
 				EA2D87161DB0C05500BD1D80 /* SignInViewController.swift */,
 				EA2D87181DB1B3CB00BD1D80 /* TermsViewController.swift */,
 			);
@@ -293,6 +296,7 @@
 				EA9EB0941DB0B93300D1CEA9 /* ViewController.swift in Sources */,
 				EA2D87191DB1B3CB00BD1D80 /* TermsViewController.swift in Sources */,
 				EA9EB0921DB0B93300D1CEA9 /* AppDelegate.swift in Sources */,
+				EA2D871B1DB1BA3C00BD1D80 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
