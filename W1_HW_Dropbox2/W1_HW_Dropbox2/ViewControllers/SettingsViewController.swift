@@ -10,11 +10,12 @@ import UIKit
 
 class SettingsViewController: UIViewController {
     @IBOutlet weak var settingsImage: UIImageView!
-    @IBOutlet weak var settingsScroll: UIScrollView!
 
+
+    @IBOutlet weak var settingsScroll: UIScrollView!
     override func viewDidLoad() {
         super.viewDidLoad()
-            settingsScroll.contentSize = settingsImage.frame.size
+        settingsScroll.contentSize = settingsImage.frame.size
         // Do any additional setup after loading the view.
     }
 
