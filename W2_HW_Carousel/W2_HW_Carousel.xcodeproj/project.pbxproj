@@ -18,6 +18,8 @@
 		EA0691FE1DBC6E7C00C23000 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0691FD1DBC6E7C00C23000 /* Common.swift */; };
 		EA0692011DBC6FDA00C23000 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0692001DBC6FDA00C23000 /* IntroViewController.swift */; };
 		EA0692041DBC75A800C23000 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0692031DBC75A800C23000 /* LoginViewController.swift */; };
+		EA0692061DBCDA8C00C23000 /* convoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0692051DBCDA8C00C23000 /* convoViewController.swift */; };
+		EA0692081DBCDB6C00C23000 /* settingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0692071DBCDB6C00C23000 /* settingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		EA0691FD1DBC6E7C00C23000 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		EA0692001DBC6FDA00C23000 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IntroViewController.swift; path = ViewControllers/IntroViewController.swift; sourceTree = "<group>"; };
 		EA0692031DBC75A800C23000 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ViewControllers/LoginViewController.swift; sourceTree = "<group>"; };
+		EA0692051DBCDA8C00C23000 /* convoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = convoViewController.swift; sourceTree = "<group>"; };
+		EA0692071DBCDB6C00C23000 /* settingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = settingsViewController.swift; path = ViewControllers/settingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +145,8 @@
 			children = (
 				EA0692001DBC6FDA00C23000 /* IntroViewController.swift */,
 				EA0692031DBC75A800C23000 /* LoginViewController.swift */,
+				EA0692071DBCDB6C00C23000 /* settingsViewController.swift */,
+				EA0692051DBCDA8C00C23000 /* convoViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -284,7 +290,9 @@
 				EA0691FE1DBC6E7C00C23000 /* Common.swift in Sources */,
 				EA0691CF1DBC6E5C00C23000 /* ViewController.swift in Sources */,
 				EA0691CD1DBC6E5C00C23000 /* AppDelegate.swift in Sources */,
+				EA0692061DBCDA8C00C23000 /* convoViewController.swift in Sources */,
 				EA0691D51DBC6E5C00C23000 /* W2_HW_Carousel.xcdatamodeld in Sources */,
+				EA0692081DBCDB6C00C23000 /* settingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
