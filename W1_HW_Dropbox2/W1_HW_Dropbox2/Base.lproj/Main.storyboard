@@ -467,6 +467,43 @@
             </objects>
             <point key="canvasLocation" x="4389.375" y="132.28833333333333"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hIO-4x-NGf">
+            <objects>
+                <navigationController id="doM-AP-G7N" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0XN-qQ-TvZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Db-gO-TkW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4851" y="-672"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="Lke-4W-Oew">
+            <objects>
+                <viewController id="Tel-Js-u2H" customClass="WebViewController" customModule="W1_HW_Dropbox2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o0w-95-asx" customClass="WebVIew">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" misplaced="YES" id="KXp-bS-Xeh" customClass="web">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="KXp-bS-Xeh" id="dxJ-aY-16y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="moM-D5-rNp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5290.5" y="-673.5"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="Sgp-eY-xDo">
             <objects>
@@ -617,7 +654,7 @@
             <objects>
                 <viewController id="URp-xj-yjT" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z1j-kD-K7i">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="empty_photos" id="n4J-Lv-xS7">
@@ -891,7 +928,7 @@
             <objects>
                 <viewController id="JdD-Wv-kKa" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="75S-qc-Udm">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="existing_files" id="1uL-65-eQD">
@@ -919,7 +956,7 @@
             <objects>
                 <viewController id="8Nf-G1-gcf" customClass="existing_photosViewController" customModule="W1_HW_Dropbox2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6v0-mk-mcc">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" id="Yvb-C8-V3a">
@@ -950,7 +987,7 @@
             <objects>
                 <viewController id="p95-w4-Imz" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OMf-Sv-9eX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty_favorites" id="luZ-wg-WJx">
@@ -1011,7 +1048,7 @@
             <objects>
                 <viewController id="zCc-S7-BhE" customClass="DetailViewController" customModule="W1_HW_Dropbox2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vmv-tk-Kmj">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="favorited" id="vOb-aD-VJ3">
@@ -1072,11 +1109,11 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="BIJ-JB-XCR"/>
+        <segue reference="4Xq-2C-Q32"/>
+        <segue reference="Xg1-KG-WV3"/>
+        <segue reference="MTb-90-AeS"/>
         <segue reference="e3C-5w-eVF"/>
         <segue reference="7bU-Lg-WhZ"/>
-        <segue reference="kcc-h0-YCG"/>
-        <segue reference="Xg1-KG-WV3"/>
         <segue reference="WCh-14-9N5"/>
     </inferredMetricsTieBreakers>
 </document>

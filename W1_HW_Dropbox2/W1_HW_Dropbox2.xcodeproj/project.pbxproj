@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA0690E61DB70DC100C23000 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0690E51DB70DC100C23000 /* WebViewController.swift */; };
 		EA2D87111DB0BF6100BD1D80 /* SignInRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2D87101DB0BF6100BD1D80 /* SignInRootViewController.swift */; };
 		EA2D87131DB0BFB500BD1D80 /* CreateAccountRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2D87121DB0BFB500BD1D80 /* CreateAccountRootViewController.swift */; };
 		EA2D87151DB0C04500BD1D80 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2D87141DB0C04500BD1D80 /* CreateAccountViewController.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EA0690E51DB70DC100C23000 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebViewController.swift; path = ViewControllers/WebViewController.swift; sourceTree = "<group>"; };
 		EA2D87101DB0BF6100BD1D80 /* SignInRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInRootViewController.swift; path = ViewControllers/SignInRootViewController.swift; sourceTree = "<group>"; };
 		EA2D87121DB0BFB500BD1D80 /* CreateAccountRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateAccountRootViewController.swift; path = ViewControllers/CreateAccountRootViewController.swift; sourceTree = "<group>"; };
 		EA2D87141DB0C04500BD1D80 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateAccountViewController.swift; path = ViewControllers/CreateAccountViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				EA2D87161DB0C05500BD1D80 /* SignInViewController.swift */,
 				EA2D871C1DB1BD2500BD1D80 /* existing_photosViewController.swift */,
 				EA2D87181DB1B3CB00BD1D80 /* TermsViewController.swift */,
+				EA0690E51DB70DC100C23000 /* WebViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				EA9EB0941DB0B93300D1CEA9 /* ViewController.swift in Sources */,
 				EA2D87191DB1B3CB00BD1D80 /* TermsViewController.swift in Sources */,
 				EA9EB0921DB0B93300D1CEA9 /* AppDelegate.swift in Sources */,
+				EA0690E61DB70DC100C23000 /* WebViewController.swift in Sources */,
 				EA2D871B1DB1BA3C00BD1D80 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
