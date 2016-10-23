@@ -10,6 +10,8 @@ import UIKit
 
 class LoginViewController: UIViewController, UIScrollViewDelegate {
     
+    
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var scrollView: UIScrollView!
     var buttonInitialY: CGFloat!
     var buttonOffset: CGFloat!
@@ -17,6 +19,57 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var buttonsView: UIView!
     @IBOutlet weak var scrollField: UIView!
     
+    @IBOutlet weak var emailField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
+    
+    let alertController = UIAlertController(title: "Email Required", message: "Please enter your email address", preferredStyle: .alert)
+    let failLogin_alertController = UIAlertController(
+        title: "Oops! Invalid Email or Password", message: "Please enter a valid Email and Password", preferredStyle: .alert)
+    // create an OK action
+    let OKAction = UIAlertAction(title: "OK", style: .default) { (action) in
+        // handle response here.
+    }
+    
+    
+    @IBAction func buttonDidPress(_ sender: AnyObject) {
+        
+        if emailField.text!.isEmpty
+        {
+            alertController.title = "Email Required"
+            alertController.message = "Please enter your email address"
+            present(alertController, animated: true)
+        }
+        else if passwordField.text!.isEmpty
+        {
+            alertController.title = "Password Required"
+            alertController.message = "Please enter your password"
+            present(alertController, animated: true)
+        }
+        else
+        {
+            //Checking Login & PW
+            activityIndicator.startAnimating()
+            run(after: 2, closure: {
+                
+                //stop activity indicator
+                self.activityIndicator.stopAnimating()
+                
+                //SUCCESSFUL LOGIN
+                if self.emailField.text == "dlin" && self.passwordField.text == "pw"
+                {
+                    self.performSegue(withIdentifier: "transitionToTutorial", sender: nil)
+                }
+                    
+                //FAIL LOGIN
+                else
+                {
+                    self.present(self.failLogin_alertController, animated: true)
+                }
+            })
+        }
+        
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +77,8 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
         buttonInitialY = buttonsView.frame.origin.y
         buttonOffset = -110
         
+        alertController.addAction(OKAction)
+        failLogin_alertController.addAction(OKAction)
         
         scrollView.delegate = self
         // Set the scroll view content size
