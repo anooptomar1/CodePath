@@ -60,7 +60,7 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
                     self.performSegue(withIdentifier: "transitionToTutorial", sender: nil)
                 }
                     
-                //FAIL LOGIN
+                    //FAIL LOGIN
                 else
                 {
                     self.present(self.failLogin_alertController, animated: true)
@@ -69,6 +69,41 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
         }
         
         
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if scrollView.contentOffset.y <= 100
+        {
+            view.endEditing(true)
+        }
+    }
+    
+    @IBOutlet weak var fieldParentView: UIView!
+    @IBOutlet weak var loginNavBar: UIImageView!
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        // Set initial transform values 20% of original size
+        let transform = CGAffineTransform(scaleX: 0.2, y: 0.2)
+        // Apply the transform properties of the views
+        self.loginNavBar.transform = transform
+        self.fieldParentView.transform = transform
+        // Set the alpha properties of the views to transparent
+        self.loginNavBar.alpha = 0
+        self.fieldParentView.alpha = 0
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        UIView.animate(withDuration: 0.3) { () -> Void in
+            let transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+            
+            // Return the views transform properties to their default states.
+            self.fieldParentView.transform = transform
+            self.loginNavBar.transform = transform
+            // Set the alpha properties of the views to fully opaque
+            self.fieldParentView.alpha = 1
+            self.loginNavBar.alpha = 1
+        }
     }
     
     override func viewDidLoad() {
@@ -88,7 +123,7 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
         // Do any additional setup after loading the view.
         
         NotificationCenter.default.addObserver(forName: Notification.Name.UIKeyboardWillShow, object: nil, queue: OperationQueue.main) { (notification: Notification) in
-
+            
             self.buttonsView.frame.origin.y = self.buttonInitialY + self.buttonOffset
             // Scroll the scrollview up
             self.scrollView.contentOffset.y = self.scrollView.contentInset.bottom
@@ -96,24 +131,26 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
         
         NotificationCenter.default.addObserver(forName: Notification.Name.UIKeyboardWillHide, object: nil, queue: OperationQueue.main) { (notification: Notification) in
             // Any code you put in here will be called when the keyboard is about to hide
+            
+            self.buttonsView.frame.origin.y = self.buttonInitialY
         }
         
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

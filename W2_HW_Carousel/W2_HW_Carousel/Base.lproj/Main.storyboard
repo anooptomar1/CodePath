@@ -167,7 +167,7 @@
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <connections>
                                                             <action selector="buttonDidPress:" destination="fQ8-bF-FAp" eventType="touchUpInside" id="hvs-aO-2Yg"/>
-                                                            <segue destination="osp-Ya-3Ig" kind="presentation" identifier="transitionToTutorial" id="RGA-6C-0hB"/>
+                                                            <segue destination="osp-Ya-3Ig" kind="presentation" identifier="transitionToTutorial" animates="NO" id="RGA-6C-0hB"/>
                                                         </connections>
                                                     </button>
                                                     <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Oc0-73-hyc">
@@ -189,6 +189,8 @@
                         <outlet property="activityIndicator" destination="Oc0-73-hyc" id="tzD-4d-2em"/>
                         <outlet property="buttonsView" destination="rfQ-C2-0n4" id="4XU-Zs-yOn"/>
                         <outlet property="emailField" destination="MY4-5w-9jH" id="wbR-mg-H6Z"/>
+                        <outlet property="fieldParentView" destination="68s-lx-oRJ" id="xNR-1v-jNr"/>
+                        <outlet property="loginNavBar" destination="nDT-dj-Ukl" id="Ydj-Qp-HGO"/>
                         <outlet property="passwordField" destination="p4T-SE-H6M" id="xkx-75-f9D"/>
                         <outlet property="scrollField" destination="68s-lx-oRJ" id="lM1-sT-yqo"/>
                         <outlet property="scrollView" destination="xv0-W7-dfV" id="0gt-dl-J2k"/>
