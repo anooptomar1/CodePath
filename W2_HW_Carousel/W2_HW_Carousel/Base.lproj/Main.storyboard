@@ -121,6 +121,7 @@
                                 <frame key="frameInset" width="64" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
+                                    <action selector="backDidPress:" destination="fQ8-bF-FAp" eventType="touchUpInside" id="wap-i3-K5u"/>
                                     <segue destination="5zm-4n-OVs" kind="show" id="SHo-cX-Qsm"/>
                                 </connections>
                             </button>
@@ -203,7 +204,7 @@
         <!--TutorialViewController-->
         <scene sceneID="2EV-b9-i86">
             <objects>
-                <viewController title="TutorialViewController" id="osp-Ya-3Ig" sceneMemberID="viewController">
+                <viewController title="TutorialViewController" id="osp-Ya-3Ig" customClass="tutorialViewController" customModule="W2_HW_Carousel" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="W7J-eR-TlY"/>
                         <viewControllerLayoutGuide type="bottom" id="Dib-SF-lpD"/>
@@ -212,8 +213,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="1500" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" directionalLockEnabled="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j00-cl-aHh">
-                                <frame key="frameInset" width="1500" height="667"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" directionalLockEnabled="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j00-cl-aHh">
+                                <frame key="frameInset" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="welcome1" translatesAutoresizingMaskIntoConstraints="NO" id="5Oc-0a-wBv">
@@ -233,7 +234,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Zf-Vc-Eem">
-                                        <rect key="frame" x="27" y="570" width="320" height="97"/>
+                                        <rect key="frame" x="1152" y="536" width="320" height="97"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="backup_button" translatesAutoresizingMaskIntoConstraints="NO" id="geI-m3-THy">
@@ -252,11 +253,23 @@
                                     </view>
                                 </subviews>
                             </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="Dbz-eI-ftE">
+                                <frame key="frameInset" minX="177" minY="606" width="39" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="pageIndicatorTintColor" white="0.39904868197278914" alpha="0.5" colorSpace="calibratedWhite"/>
+                                <color key="currentPageIndicatorTintColor" red="0.24483692646026611" green="0.44872754812240601" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="1500" height="667"/>
+                    <connections>
+                        <outlet property="buttonsView" destination="7Zf-Vc-Eem" id="Gtd-wW-XhA"/>
+                        <outlet property="pageController" destination="Dbz-eI-ftE" id="bWH-QE-UH4"/>
+                        <outlet property="pageView" destination="5Oc-0a-wBv" id="hQL-im-eit"/>
+                        <outlet property="scrollView" destination="j00-cl-aHh" id="z6G-40-g94"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kc0-Nt-gCe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -10,6 +10,10 @@ import UIKit
 
 class LoginViewController: UIViewController, UIScrollViewDelegate {
     
+    @IBAction func backDidPress(_ sender: AnyObject) {
+        navigationController?.popViewController(animated: true)
+
+    }
     
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var scrollView: UIScrollView!
@@ -59,8 +63,7 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
                 {
                     self.performSegue(withIdentifier: "transitionToTutorial", sender: nil)
                 }
-                    
-                    //FAIL LOGIN
+                //FAIL LOGIN
                 else
                 {
                     self.present(self.failLogin_alertController, animated: true)
