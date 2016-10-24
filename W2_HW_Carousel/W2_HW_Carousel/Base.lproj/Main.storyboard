@@ -54,8 +54,12 @@
                                             <segue destination="fQ8-bF-FAp" kind="show" id="avC-RE-GlU"/>
                                         </connections>
                                     </button>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" image="intro_tile1" translatesAutoresizingMaskIntoConstraints="NO" id="zQ7-XY-emW">
-                                        <rect key="frame" x="61" y="879" width="173" height="172"/>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" image="intro_tile5" translatesAutoresizingMaskIntoConstraints="NO" id="edX-W0-cgH">
+                                        <rect key="frame" x="146" y="1055" width="88" height="85"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" image="intro_tile6" translatesAutoresizingMaskIntoConstraints="NO" id="qbx-h8-iaq">
+                                        <rect key="frame" x="235" y="1056" width="85" height="84"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" image="intro_tile3" translatesAutoresizingMaskIntoConstraints="NO" id="HK4-Wd-hZJ">
@@ -66,12 +70,8 @@
                                         <rect key="frame" x="60" y="1055" width="85" height="85"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" image="intro_tile5" translatesAutoresizingMaskIntoConstraints="NO" id="edX-W0-cgH">
-                                        <rect key="frame" x="146" y="1055" width="88" height="85"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" image="intro_tile6" translatesAutoresizingMaskIntoConstraints="NO" id="qbx-h8-iaq">
-                                        <rect key="frame" x="235" y="1056" width="85" height="84"/>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" image="intro_tile1" translatesAutoresizingMaskIntoConstraints="NO" id="zQ7-XY-emW">
+                                        <rect key="frame" x="61" y="879" width="173" height="172"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" image="intro_tile2" translatesAutoresizingMaskIntoConstraints="NO" id="W5b-Yz-p36">
@@ -89,6 +89,12 @@
                     <connections>
                         <outlet property="imageView" destination="07o-oy-MF5" id="m8J-MK-pIq"/>
                         <outlet property="scrollView" destination="fMV-J5-Z0K" id="GZG-3X-KgY"/>
+                        <outlet property="tile1" destination="zQ7-XY-emW" id="mhc-IH-0Nx"/>
+                        <outlet property="tile2" destination="W5b-Yz-p36" id="So1-2j-rIO"/>
+                        <outlet property="tile3" destination="HK4-Wd-hZJ" id="KAm-rQ-iA0"/>
+                        <outlet property="tile4" destination="rvV-ip-WfN" id="fw6-Qh-CQk"/>
+                        <outlet property="tile5" destination="edX-W0-cgH" id="DI0-4C-vCV"/>
+                        <outlet property="tile6" destination="qbx-h8-iaq" id="vh8-PR-oCd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aBS-a6-CLr" userLabel="First Responder" sceneMemberID="firstResponder"/>
