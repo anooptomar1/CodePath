@@ -40,8 +40,11 @@ class IntroViewController: UIViewController, UIScrollViewDelegate {
         
         let start  = CGFloat(-20)
         let end    = CGFloat(673)
-        let offset = CGFloat(scrollView.contentOffset.y)
+        var offset = CGFloat(scrollView.contentOffset.y)
         let numberOfTiles = tiles.count
+        
+        if offset > end { offset = end }
+        if offset < start { offset = start }
         
         for i in 0 ..< numberOfTiles
         {
@@ -54,6 +57,7 @@ class IntroViewController: UIViewController, UIScrollViewDelegate {
             let scale = convertValue(inputValue: offset, r1Min: start, r1Max: end, r2Min: scales[i], r2Max: 1)
             let rotation_radians = convertValue(inputValue: offset, r1Min: CGFloat(start), r1Max: CGFloat(end), r2Min: rotations[i], r2Max: 0)
             let rotation_degrees = CGFloat(Double(rotation_radians) * M_PI / 180)
+            
             
             //Apply Transform
             tile.transform = CGAffineTransform(translationX: CGFloat(tx),y: CGFloat(ty))
