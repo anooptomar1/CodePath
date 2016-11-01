@@ -153,6 +153,9 @@ class MainViewController: UIViewController {
                 animateTo = offScreenLeft
                 leftIcon.alpha = 0
                 swipeModalOpacity = 1
+                swipeModal_list.alpha = 1
+                swipeModal_snooze.alpha = 0
+
 
             }
             else if translation.x < -60 {
@@ -160,6 +163,8 @@ class MainViewController: UIViewController {
                 animateTo = offScreenLeft
                 leftIcon.alpha = 0
                 swipeModalOpacity = 1
+                swipeModal_list.alpha = 0
+                swipeModal_snooze.alpha = 1
 
             }
                 
