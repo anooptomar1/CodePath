@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="W3_L1_AnimationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" image="pig" translatesAutoresizingMaskIntoConstraints="NO" id="6qx-xr-SjK">
+                                <frame key="frameInset" minX="195" minY="197" width="164" height="164"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCy-lp-QKf">
+                                <frame key="frameInset" minX="146" minY="389" width="161" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Animate Pig"/>
+                                <connections>
+                                    <action selector="didTapAnimatePigButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ubR-4Y-sDL"/>
+                                </connections>
+                            </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" image="biker" highlightedImage="biker" translatesAutoresizingMaskIntoConstraints="NO" id="sfj-1U-y5S">
+                                <frame key="frameInset" minX="107" minY="98" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="b4m-lR-2gT" appends="YES" id="VDp-3l-Coq"/>
+                                    <outletCollection property="gestureRecognizers" destination="Xg9-v6-bow" appends="YES" id="7tC-W8-yJM"/>
+                                    <outletCollection property="gestureRecognizers" destination="Bg0-TT-z4o" appends="YES" id="pI3-Lh-DDD"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="bikerImageView" destination="sfj-1U-y5S" id="jeQ-FG-0Rg"/>
+                        <outlet property="didTapBiker" destination="b4m-lR-2gT" id="QE7-7Y-hYf"/>
+                        <outlet property="pigImageView" destination="6qx-xr-SjK" id="vJA-xk-N8K"/>
+                        <outlet property="pinchGestureRecognizer" destination="Bg0-TT-z4o" id="jDT-R4-axn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTapsRequired="5" id="b4m-lR-2gT">
+                    <connections>
+                        <action selector="didTapBiker:" destination="BYZ-38-t0r" id="FaV-eS-8uN"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Xg9-v6-bow">
+                    <connections>
+                        <action selector="didPanBiker:" destination="BYZ-38-t0r" id="Do6-zu-cXx"/>
+                    </connections>
+                </panGestureRecognizer>
+                <pinchGestureRecognizer id="Bg0-TT-z4o">
+                    <connections>
+                        <action selector="didPinch:" destination="BYZ-38-t0r" id="w1M-ZC-iQu"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="gNC-wM-L6r"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="biker" width="600" height="600"/>
+        <image name="pig" width="600" height="600"/>
+    </resources>
+</document>

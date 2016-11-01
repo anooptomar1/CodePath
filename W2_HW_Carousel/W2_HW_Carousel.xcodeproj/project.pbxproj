@@ -21,6 +21,7 @@
 		EA0692061DBCDA8C00C23000 /* convoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0692051DBCDA8C00C23000 /* convoViewController.swift */; };
 		EA0692081DBCDB6C00C23000 /* settingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0692071DBCDB6C00C23000 /* settingsViewController.swift */; };
 		EA06920A1DBDBD1400C23000 /* tutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0692091DBDBD1400C23000 /* tutorialViewController.swift */; };
+		EA06920C1DBDD60400C23000 /* timelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06920B1DBDD60400C23000 /* timelineViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		EA0692051DBCDA8C00C23000 /* convoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = convoViewController.swift; sourceTree = "<group>"; };
 		EA0692071DBCDB6C00C23000 /* settingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = settingsViewController.swift; path = ViewControllers/settingsViewController.swift; sourceTree = "<group>"; };
 		EA0692091DBDBD1400C23000 /* tutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = tutorialViewController.swift; path = ViewControllers/tutorialViewController.swift; sourceTree = "<group>"; };
+		EA06920B1DBDD60400C23000 /* timelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = timelineViewController.swift; path = ViewControllers/timelineViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 			children = (
 				EA0692001DBC6FDA00C23000 /* IntroViewController.swift */,
 				EA0692031DBC75A800C23000 /* LoginViewController.swift */,
+				EA06920B1DBDD60400C23000 /* timelineViewController.swift */,
 				EA0692071DBCDB6C00C23000 /* settingsViewController.swift */,
 				EA0692091DBDBD1400C23000 /* tutorialViewController.swift */,
 				EA0692051DBCDA8C00C23000 /* convoViewController.swift */,
@@ -295,6 +298,7 @@
 				EA0691CF1DBC6E5C00C23000 /* ViewController.swift in Sources */,
 				EA0691CD1DBC6E5C00C23000 /* AppDelegate.swift in Sources */,
 				EA0692061DBCDA8C00C23000 /* convoViewController.swift in Sources */,
+				EA06920C1DBDD60400C23000 /* timelineViewController.swift in Sources */,
 				EA0691D51DBC6E5C00C23000 /* W2_HW_Carousel.xcdatamodeld in Sources */,
 				EA0692081DBCDB6C00C23000 /* settingsViewController.swift in Sources */,
 			);

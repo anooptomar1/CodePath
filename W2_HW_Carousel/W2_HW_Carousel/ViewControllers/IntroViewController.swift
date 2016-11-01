@@ -58,7 +58,6 @@ class IntroViewController: UIViewController, UIScrollViewDelegate {
             let rotation_radians = convertValue(inputValue: offset, r1Min: CGFloat(start), r1Max: CGFloat(end), r2Min: rotations[i], r2Max: 0)
             let rotation_degrees = CGFloat(Double(rotation_radians) * M_PI / 180)
             
-            
             //Apply Transform
             tile.transform = CGAffineTransform(translationX: CGFloat(tx),y: CGFloat(ty))
             tile.transform = tile.transform.scaledBy(x: scale, y: scale)

@@ -59,7 +59,7 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
                 self.activityIndicator.stopAnimating()
                 
                 //SUCCESSFUL LOGIN
-                if self.emailField.text == "dlin" && self.passwordField.text == "pw"
+                if((self.emailField.text == "dlin") && (self.passwordField.text == "pw"))
                 {
                     self.performSegue(withIdentifier: "transitionToTutorial", sender: nil)
                 }

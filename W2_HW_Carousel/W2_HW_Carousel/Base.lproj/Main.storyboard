@@ -168,7 +168,6 @@
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <connections>
                                                             <action selector="buttonDidPress:" destination="fQ8-bF-FAp" eventType="touchUpInside" id="hvs-aO-2Yg"/>
-                                                            <segue destination="osp-Ya-3Ig" kind="presentation" identifier="transitionToTutorial" animates="NO" id="RGA-6C-0hB"/>
                                                         </connections>
                                                     </button>
                                                     <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Oc0-73-hyc">
@@ -195,6 +194,7 @@
                         <outlet property="passwordField" destination="p4T-SE-H6M" id="xkx-75-f9D"/>
                         <outlet property="scrollField" destination="68s-lx-oRJ" id="lM1-sT-yqo"/>
                         <outlet property="scrollView" destination="xv0-W7-dfV" id="0gt-dl-J2k"/>
+                        <segue destination="osp-Ya-3Ig" kind="presentation" identifier="transitionToTutorial" id="XkD-Vh-ZSW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FYa-53-1aa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -278,7 +278,7 @@
         <!--timeline-->
         <scene sceneID="pTx-lN-Ceb">
             <objects>
-                <viewController title="timeline" id="ipQ-64-Ltb" sceneMemberID="viewController">
+                <viewController title="timeline" id="ipQ-64-Ltb" customClass="timelineViewController" customModule="W2_HW_Carousel" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XSy-jy-LTl"/>
                         <viewControllerLayoutGuide type="bottom" id="Lb4-PM-9tO"/>
@@ -303,15 +303,15 @@
                                                 <frame key="frameInset" width="378" height="1851"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </imageView>
-                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" image="scrubber" translatesAutoresizingMaskIntoConstraints="NO" id="iBU-1F-iLi">
-                                                <frame key="frameInset" width="378" height="42" maxY="-3"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
-                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                 </subviews>
                             </scrollView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" image="scrubber" translatesAutoresizingMaskIntoConstraints="NO" id="iBU-1F-iLi">
+                                <frame key="frameInset" minX="-2" width="378" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UtL-4f-Ozi" userLabel="settingButton">
                                 <frame key="frameInset" width="103" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -332,6 +332,10 @@
                     <navigationItem key="navigationItem" id="264-oG-we9"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="feedImageView" destination="Pd7-Mb-yEp" id="UFj-eq-q2R"/>
+                        <outlet property="scrollView" destination="IUn-3B-If7" id="zoQ-z5-rh8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AY1-pl-nzP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
