@@ -2,7 +2,7 @@
 
 The purpose of this homework is to leverage animations and gestures to create custom navigation. We're going to use the techniques from this week to implement some interactions in Tumblr.
 
-Time spent: `<Number of hours spent>`
+Time spent: `10`
 
 ### Features
 
