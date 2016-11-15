@@ -12,7 +12,8 @@ class NewsFeedViewController: UIViewController {
 
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var feedImageView: UIImageView!
-    var selectedImage: UIImage!
+    var selectedImageView: UIImageView!
+    var imageZoomTransition: ImageZoomTransition!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,13 +38,17 @@ class NewsFeedViewController: UIViewController {
     
     
     @IBAction func didTapImage(_ sender: UITapGestureRecognizer) {
-        let selectedImageView = sender.view as! UIImageView
-        selectedImage = selectedImageView.image
+        selectedImageView = sender.view as! UIImageView
         performSegue(withIdentifier: "imageSegue", sender: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let imageViewController = segue.destination as! ImageViewController
-        imageViewController.image = selectedImage
+        imageViewController.image = selectedImageView.image
+        
+        imageZoomTransition = ImageZoomTransition()
+        imageViewController.modalPresentationStyle = .custom
+        imageViewController.transitioningDelegate = imageZoomTransition
+        imageZoomTransition.duration = 0.3
     }
 }

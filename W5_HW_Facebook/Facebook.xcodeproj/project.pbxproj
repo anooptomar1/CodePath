@@ -22,6 +22,9 @@
 		429277A8198F393500E19641 /* CreateCheckinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429277A7198F393500E19641 /* CreateCheckinViewController.swift */; };
 		EAFA2D261DDAB75C00C07491 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFA2D251DDAB75C00C07491 /* FeedViewController.swift */; };
 		EAFA2D281DDAB89200C07491 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFA2D271DDAB89200C07491 /* ImageViewController.swift */; };
+		EAFA2D2D1DDAC5F600C07491 /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFA2D2B1DDAC5F600C07491 /* BaseTransition.swift */; };
+		EAFA2D2E1DDAC5F600C07491 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFA2D2C1DDAC5F600C07491 /* FadeTransition.swift */; };
+		EAFA2D301DDAC63100C07491 /* ImageZoomTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFA2D2F1DDAC63100C07491 /* ImageZoomTransition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,9 @@
 		429277A7198F393500E19641 /* CreateCheckinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateCheckinViewController.swift; sourceTree = "<group>"; };
 		EAFA2D251DDAB75C00C07491 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		EAFA2D271DDAB89200C07491 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		EAFA2D2B1DDAC5F600C07491 /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTransition.swift; sourceTree = "<group>"; };
+		EAFA2D2C1DDAC5F600C07491 /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
+		EAFA2D2F1DDAC63100C07491 /* ImageZoomTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageZoomTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,9 @@
 				4216765C198E3220008CCBC3 /* Images.xcassets */,
 				EAFA2D251DDAB75C00C07491 /* FeedViewController.swift */,
 				EAFA2D271DDAB89200C07491 /* ImageViewController.swift */,
+				EAFA2D2B1DDAC5F600C07491 /* BaseTransition.swift */,
+				EAFA2D2F1DDAC63100C07491 /* ImageZoomTransition.swift */,
+				EAFA2D2C1DDAC5F600C07491 /* FadeTransition.swift */,
 				42167653198E3220008CCBC3 /* Supporting Files */,
 			);
 			path = Facebook;
@@ -249,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				429277A0198F068E00E19641 /* StoryViewController.swift in Sources */,
+				EAFA2D301DDAC63100C07491 /* ImageZoomTransition.swift in Sources */,
 				429277A2198F35B600E19641 /* MessagesViewController.swift in Sources */,
 				42167676198ECA7C008CCBC3 /* NotificationsViewController.swift in Sources */,
 				42167656198E3220008CCBC3 /* AppDelegate.swift in Sources */,
@@ -256,8 +266,10 @@
 				429277A4198F391500E19641 /* CreateStatusViewController.swift in Sources */,
 				429277A8198F393500E19641 /* CreateCheckinViewController.swift in Sources */,
 				EAFA2D261DDAB75C00C07491 /* FeedViewController.swift in Sources */,
+				EAFA2D2E1DDAC5F600C07491 /* FadeTransition.swift in Sources */,
 				42167678198ECE0E008CCBC3 /* RequestsViewController.swift in Sources */,
 				42167673198EAABC008CCBC3 /* SettingsViewController.swift in Sources */,
+				EAFA2D2D1DDAC5F600C07491 /* BaseTransition.swift in Sources */,
 				EAFA2D281DDAB89200C07491 /* ImageViewController.swift in Sources */,
 				4216767A198ECE88008CCBC3 /* NewsFeedViewController.swift in Sources */,
 			);
