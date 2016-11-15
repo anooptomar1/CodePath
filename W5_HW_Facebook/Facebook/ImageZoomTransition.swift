@@ -51,7 +51,6 @@ class ImageZoomTransition: BaseTransition {
         let zoomedImageView           = zoomedImageViewController.imageView
         originalFeedImageViewFrame   = feedViewController.selectedImageView!.frame
         
-        zoomedImageViewController.bg.alpha = 1
         
         UIView.animate(withDuration: duration, animations: {
             zoomedImageViewController.bg.alpha = 0
